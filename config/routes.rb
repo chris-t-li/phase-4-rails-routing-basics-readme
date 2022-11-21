@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get 'cheeses', to: 'cheeses#index' 
+  get 'cheeses/ordered', to: 'cheeses#sort_by_price_desc'
 end
